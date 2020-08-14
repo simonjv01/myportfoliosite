@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
+import Certifications from './certifications';
+import Skills from './skills';
 
 
 class Resume extends Component {
@@ -68,6 +70,32 @@ class Resume extends Component {
                          companyName="Verizon Wireless"
                          jobTitle="Senior Analyst"
                          />
+                            <Experience
+                         startYear={2012}
+                         endYear={2013}
+                         companyName="Ashland Inc"
+                         jobTitle="Staff IT Auditor II"
+                         />
+                          <hr style={{borderTop: '3px solid #0072ff', width: '50%'}}/>
+
+                          <h2>Certifications</h2>
+
+                          <Certifications
+                          startYear={2012}
+                          certification="Certified Information Systems Auditor(CISA) - Inactive"
+                          />
+                               <Certifications
+                          startYear={2009}
+                          certification="CompTIA Security+"
+                          />
+
+                              <hr style={{borderTop: '3px solid #0072ff', width: '50%'}}/>
+
+                            <h2>Skills</h2>
+                          <Skills 
+                              skill="Java"
+                              progress={55}
+                          />
 
                     </Cell>
                 </Grid>
